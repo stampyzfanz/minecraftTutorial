@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Minecraft Crafting Guide</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" href="images/Minecraft_logo.png">  
+  <link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body style="background: #c6c6c6;">
+  <header class="topnav header" id="Header">
+    <a href="index.html" id="icon"><img src="images/Minecraft_logo.png" class="logo" alt="homepage logo"></a>
+    <a class="link" href="index.html">Home</a>
+    <a href="Building.html" class="link">Building</a>
+    <a href="#" class="link active">Crafting</a>
+    <a href="Combat.html" class="link">Combat</a>
+    <a href="Commands.html" class="link">Commands</a>
+    <a href="Redstone.html" class="link">Redstone</a>
+    <a href="Credits.html" class="link" id="no-line">Credits</a>
+  </header> 
+  <div class="contents">
+    <div class="banner-container banner-image-2">
+      <div class="banner-text">
+        <h1>Crafting</h1>
+        <p class="whitetext"> Crafting is the process to create new items with items you already have. It's needed so that necessary items can be created to ensure survival. There are arrangements, called recipes, of different items that make other items. These recipes can either be memorised, like players had to do in earlier versions of Minecraft, or use the recipe book, which is slightly slower to use in some cases but remembers the recipes so you don't have to.</p>
+      </div>
+    </div>
+
+    <div class="white-box flex-container">
+      <div class="left">
+        <div class="videoWrapper">
+          <iframe src="https://www.youtube.com/embed/JEcmdaI1G54" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="right">
+        <p>
+          <a href="https://minecraft.fandom.com/wiki/Crafting">Here</a> is a list of every craftable recipe on the <a href="https://minecraft.fandom.com/wiki/Minecraft_Wiki">Minecraft Wiki</a>. 
+
+          In Minecraft, you start with a 2x2 crafting grid but in order to create most recipes you need to upgrade it into a 3x3 grid. You quickly replace your 2x2 crafting grid in your inventory with a superior crafting table that allows 3x3 crafting recipes. There are many other blocks that aid crafting in Minecraft, such as the smithing table and the fletching table, which are explained on the accompanying video on the left. Once you learn the basics of crafting, there are some productivity tips to be more efficient. You can press shift when you add the item to inventory to buy everything. This should be used with caution, as you don't want to accidently spend 48 iron on 6 chest plates instead of making the 1 chest plate you want. Furthermore, you can hold and drag items over the crafting grid in order to distribute them easily into groups, like dividing them into groups. 
+        </p>
+      </div>
+    </div>
+
+    <div id="screen">
+
+      <div class="flex-container" style="background-color: inherit;">
+        <div class="left">
+          <h3>Crafting Table</h3>
+            <div id="grid">
+              <div class='gridCell' onClick="selectCraftTable(0);" id="craftTable-0"></div>
+              <div class='gridCell' onClick="selectCraftTable(1);" id="craftTable-1"></div>
+              <div class='gridCell' onClick="selectCraftTable(2);" id="craftTable-2"></div>
+              <div class='gridCell' onClick="selectCraftTable(3);" id="craftTable-3"></div>
+              <div class='gridCell' onClick="selectCraftTable(4);" id="craftTable-4"></div>
+              <div class='gridCell' onClick="selectCraftTable(5);" id="craftTable-5"></div>
+              <div class='gridCell' onClick="selectCraftTable(6);" id="craftTable-6"></div>
+              <div class='gridCell' onClick="selectCraftTable(7);" id="craftTable-7"></div>
+              <div class='gridCell' onClick="selectCraftTable(8);" id="craftTable-8"></div>
+            </div>  
+            <div class="arrow">
+              &#10132;
+            </div>  
+            <div id="result" onClick="addItemToInventory();"></div>
+        </div>
+        <div class="right green-box" style="min-height: auto !important; background-color: #c6c6c6 !important;">
+          <h2 class="card-text" style="margin-top: 1em;">Game</h2>
+          <p id="help">Click on an ingredient from your inventory, then click on a cell of your crafting table to place this ingredient. If it's a recipe and creates something, tap on the item it creates to add it to your inventory. This is a game meant to reinforce recipes in your head in an enjoyable manner, simplifying Minecraft to just crafting so you can focus and learn about it easier. You get given the uncraftables, meaning you have the minimum number of items required to craft all craftable items.</p>
+        </div>
+      </div>
+      <div id="inventory" style="margin-top: 50px;">
+      </div>
+    </div>
+  </div>
+  <footer class="below" style="min-height:330px">
+    <div style="background-color: #212121; float: left; padding-left: 65px;">
+    <h4 class="whitetext">Resources</h4>
+    <p class="whitetext footer-text"><a href="http://minecraft.net/" class="whitetext">Official Minecraft Website</a> | <a href="https://minecraft.fandom.com/wiki/Minecraft_Wiki" class="whitetext">Minecraft Wiki</a> | <a href="https://www.amazon.com.au/Minecraft-Complete-Handbook-Collection-Scholastic/dp/0545685192" class="whitetext">Minecraft Handbooks</a> | <a href="https://minecraft.fandom.com/wiki/Tutorials " class="whitetext">Minecraft Wiki Tutorials</a></p>
+    </div>
+    <div style="background-color: #212121; float: right; padding-bottom: 10px; padding-right: 65px; text-align: right;">
+      <h4 class="whitetext">YouTubers</h4>
+    <p class="whitetext footer-text"><a href="https://www.youtube.com/channel/UChFur_NwVSbUozOcF_F2kMg/" class="whitetext">Mumbo Jumbo (Redstone)</a> | <a href="https://www.youtube.com/user/Xelqua" class="whitetext">Grian (Building)</a> | <a href="https://www.youtube.com/channel/UCTkXRDQl0luXxVQrRQvWS6w" class="whitetext">Dream (Speedrunning)</a> | <a href="https://www.youtube.com/channel/UCJZam2u1G0syq3kyqrCXrNw" class="whitetext">PrestonPlayz (Minigames)</a></p>
+    </div>
+    <div class="below" style="padding-left: 65px;">
+    <p class="whitetext">The project is not endorsed by Microsoft, but is a fan project for educational purposes.</p>
+    <p class="whitetext">Created by <a href="https://github.com/Blockmaster2118" class="whitetext">Blockmaster2118</a> & <a href="https://github.com/stampyzfanz" class="whitetext">Stampyzfanz</a></p>
+    <p class="whitetext">All rights reserved &copy; 2021</p>
+    </div>
+    </footer>
+  <script src="scripts.js"></script>
+  <script src="data/recipes.js"></script>
+  <script src="data/textures.js"></script>
+  <script src="data/tags.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

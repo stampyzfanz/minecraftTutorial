@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Minecraft Commands Guide</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" href="images/Minecraft_logo.png" >
+</head>
+<body>
+  <header class="topnav header" id="Header">
+    <a href="index.html" id="icon"><img src="images/Minecraft_logo.png" class="logo" alt="homepage logo"></a>
+    <a class="link" href="index.html">Home</a>
+    <a href="Building.html" class="link">Building</a>
+    <a href="Crafting.html" class="link">Crafting</a>
+    <a href="Combat.html" class="link">Combat</a>
+    <a href="#" class="link active">Commands</a>
+    <a href="Redstone.html" class="link">Redstone</a> 
+    <a href="Credits.html" class="link" id="no-line">Credits</a>
+  </header> 
+  <div class="contents">
+    <div class="banner-container banner-image-3">
+      <div class="banner-text">
+        <h1>Commands</h1>
+        <p class="whitetext">
+          Commands are a way for an administrator or script to interact with your Minecraft world as an operator. It allows you to control things, making you some kind of god of your world. You can <code>/teleport</code> to anywhere you want, <code>/give</code> yourself anything you want and even <code>/fill</code> the world with whatever blocks you can conceptualise. The limit is your imagination.
+        </p>
+      </div>
+    </div>
+    <div class="flex-container white-box">
+      <div class="left">
+        <h2>Teleportation</h2>
+        <p>Commands work by typing in chat (chat is opened by pressing t) a forward slash, the name of the command and whatever arguments you pass to it. For example, there is the /tp command. Its documentation is on the Minecraft Wiki, and its general form syntax is complicated, however, by looking at examples you can guess what it means. In the <code>/tp</code> command there's multiple options for what you can do, but the easiest one is to just say the 3 numbers of where you want to go to. For example, if I want to go to a sea outpost at <i>-257 73 83</i> then you would type <code>/tp -257 73 83</code>. There are also <i>@</i> identifiers to select players. They include <i>@a</i> for every player, <i>@p</i> for whoever executed the command, and <i>@r</i> for a random player. </p>
+      </div>
+      <div class="right">
+        <img src="images/Commands 2.png" style="width: 100%;" alt="example of teleportation">
+      </div>
+    </div>
+    <div class="flex-container green-box">
+      <div class="left">
+        <img src="images/Commands 1.png" style="width: 100%;" alt="cube of tnt created using /fill">
+      </div>
+      <div class="right">
+        <h2 class="whitetext">Fill</h2>
+        <p class="whitetext"> The <code>/fill</code> command fills a cube with blocks. There are many uses for this but, by far, the most common one is filling an area with TNT! An example is provided on the left. There is absolute and relative positioning in Minecraft. The default is absolute positioning, where the x y and z are based on a single block in the world. The relative positioning means you can reference coordinates relative to where the player is located. You declare it to be relative by putting a tilde (~) in front of the number. For example, if you want to make a 10 by 10 cube of stone from the bottom of the world to the top next to where you are, you can do that by typing <code>/fill ~-11 1 ~-11 ~-1 255 ~-1 stone</code>. There are 2 sets of coordinates for the lower left and upper right corners of the rectangular prism that you have created. It is <code>/fill x<sub>1</sub> y<sub>1</sub> z<sub>1</sub> x<sub>2</sub> y<sub>2</sub> z<sub>2</sub> material</code>. </p>
+      </div>
+    </div>
+    <div class="flex-container grey-box">
+      <div class="left">
+        <h3 class="whitetext">Give</h3>
+        <p class="whitetext">The <i>/give</i> command gives items of your choosing to players. For example, a <code>/give</code> command can give a stack of golden apples to every player. The aforementioned command can be performed by running <code>/give @a golden_apple 64</code>. This gives every player 64 apples, which is known as a stack. If you're doing PvP but you are the operator and feel like cheating, you can give yourself a diamond sword by typing <code>/give @p diamond_sword 1</code>. If you give a player more items than they can carry, the spares are thrown on the ground in front of them as shown in the picture to the right. </p>
+      </div>
+      <div class="right">
+        <img src="images/Commands 3.png" style="width: 100%;" alt="diamonds that overflowed a player's inventory given via /give">
+      </div>
+      </div>
+      <div class="white-box flex-container">
+    <div class="left">
+      <div class="videoWrapper">
+        <iframe src="https://www.youtube.com/embed/cPL38LbA0T8" title="YouTube video player" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="right">
+      <h2>Command block creations</h2>
+      <p>Similar to commands, there are command blocks that run commands when they receive a <a href="./Redstone.html">redstone signal</a>. They range from very simplistic to very complex. There could be a single command block on repeat summoning primed TNT, spawning a mob such as a zombie or wither, or even going as far as continuously killing a player whenever they respawn. Command blocks have lots of potential to create good but can be used maliciously. As spiderman once said, "With great power comes great responsibility", a theme common in games, and even technology in general, highlighted through the powerful command blocks with the power to irreversibly change your world and the  experience of playing it for all of its players. </p>
+    </div>
+  </div>
+    </div>
+    <footer class="below" style="min-height:330px">
+      <div style="background-color: #212121; float: left; padding-left: 65px;">
+      <h4 class="whitetext">Resources</h4>
+      <p class="whitetext footer-text"><a href="http://minecraft.net/" class="whitetext">Official Minecraft Website</a> | <a href="https://minecraft.fandom.com/wiki/Minecraft_Wiki" class="whitetext">Minecraft Wiki</a> | <a href="https://www.amazon.com.au/Minecraft-Complete-Handbook-Collection-Scholastic/dp/0545685192" class="whitetext">Minecraft Handbooks</a> | <a href="https://minecraft.fandom.com/wiki/Tutorials " class="whitetext">Minecraft Wiki Tutorials</a></p>
+      </div>
+      <div style="background-color: #212121; float: right; padding-bottom: 10px; padding-right: 65px; text-align: right;">
+        <h4 class="whitetext">YouTubers</h4>
+      <p class="whitetext footer-text"><a href="https://www.youtube.com/channel/UChFur_NwVSbUozOcF_F2kMg/" class="whitetext">Mumbo Jumbo (Redstone)</a> | <a href="https://www.youtube.com/user/Xelqua" class="whitetext">Grian (Building)</a> | <a href="https://www.youtube.com/channel/UCTkXRDQl0luXxVQrRQvWS6w" class="whitetext">Dream (Speedrunning)</a> | <a href="https://www.youtube.com/channel/UCJZam2u1G0syq3kyqrCXrNw" class="whitetext">PrestonPlayz (Minigames)</a></p>
+      </div>
+      <div class="below" style="padding-left: 65px;">
+      <p class="whitetext">The project is not endorsed by Microsoft, but is a fan project for educational purposes.</p>
+      <p class="whitetext">Created by <a href="https://github.com/Blockmaster2118" class="whitetext">Blockmaster2118</a> & <a href="https://github.com/stampyzfanz" class="whitetext">Stampyzfanz</a></p>
+      <p class="whitetext">All rights reserved &copy; 2021</p>
+      </div>
+      </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
